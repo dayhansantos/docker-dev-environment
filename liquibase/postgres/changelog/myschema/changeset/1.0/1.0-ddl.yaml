@@ -1,0 +1,12 @@
+databaseChangeLog:
+ - changeSet:
+      id: 1.0-MYSCHEMA_TB_TX_OUTBOX
+      author: ${authorName}
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ddl/tb_tx_outbox.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+      rollback: ""

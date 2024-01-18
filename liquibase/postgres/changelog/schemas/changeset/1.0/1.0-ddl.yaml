@@ -1,0 +1,12 @@
+databaseChangeLog:
+ - changeSet:
+      id: 1.0-SCHEMAS
+      author: ${authorName}
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ddl/schemas.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+      rollback: ""

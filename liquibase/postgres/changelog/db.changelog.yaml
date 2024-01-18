@@ -1,0 +1,9 @@
+databaseChangeLog: 
+     - include: 
+          file: /schemas/db.changelog.yaml
+          relativeToChangelogFile: true 
+          errorIfMissingorEmpty: true
+     - include: 
+          file: /myschema/db.changelog.yaml
+          relativeToChangelogFile: true 
+          errorIfMissingorEmpty: true 
